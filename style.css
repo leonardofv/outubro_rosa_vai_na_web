@@ -35,6 +35,13 @@ header a:hover {
   border-bottom: 1px solid white;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #FFD9EC;
+}
+
 .container-voce-sabe {
   display: flex;
   background: #FFD9EC;
@@ -42,8 +49,7 @@ header a:hover {
   justify-content: space-evenly;
   padding: 20px 0;
 }
-
-.p-voce-sabe {
+.container-voce-sabe .p-voce-sabe {
   width: 45.2vw;
   height: 54.2vh;
   font-size: 25px;
@@ -51,8 +57,7 @@ header a:hover {
   display: flex;
   align-items: center;
 }
-
-.imagem-voce-sabe img {
+.container-voce-sabe .imagem-voce-sabe img {
   width: 23.7vw;
   height: 51vh;
   border-radius: 4px;
@@ -66,16 +71,14 @@ header a:hover {
   padding: 15px;
   height: 37.6vh;
 }
-
-.imagem-multirao img {
+.multirao .imagem-multirao img {
   width: 25.4vw;
   height: 32.6vh;
   border-radius: 4px;
   display: flex;
   align-items: center;
 }
-
-.p-multirao {
+.multirao .p-multirao {
   width: 42.1vw;
   height: 25vh;
   color: #E4EEF1;
@@ -90,8 +93,7 @@ header a:hover {
   justify-items: center;
   background-color: #FFD9EC;
 }
-
-.informacoes-item {
+.informacoes .informacoes-item {
   width: 16.2vw;
   height: 35.9vh;
 }
@@ -103,27 +105,24 @@ header a:hover {
   justify-content: space-around;
   align-items: center;
 }
-
-.icones {
+.rodape .icones {
   display: flex;
   gap: 15px;
 }
-.icones .icones-sociais {
+.rodape .icones .icones-sociais {
   width: 3.6vw;
   height: 7.5vh;
 }
-
-.informacoes-autor {
+.rodape .informacoes-autor {
   text-align: center;
   color: #E4EEF1;
   font-size: 12px;
 }
-
-.icone-outubro-rosa {
+.rodape .icone-outubro-rosa {
   display: flex;
   align-items: center;
 }
-.icone-outubro-rosa img {
+.rodape .icone-outubro-rosa img {
   width: 6.8vw;
   height: 15.6vh;
 }/*# sourceMappingURL=style.css.map */

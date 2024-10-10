@@ -7,6 +7,7 @@
     font-family: "Noto Sans", sans-serif;
 }
 
+//-----------------------------
 .ContainerHeader {
     display: flex;
     align-items: center;
@@ -38,12 +39,12 @@ header {
 
 //--------------------------------
 
-// main {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     background-color: #FFD9EC;
-// }
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #FFD9EC;
+}
 
 .container-voce-sabe {
     display: flex;
@@ -51,23 +52,20 @@ header {
     width: 100%;
     justify-content: space-evenly;
     padding: 20px 0;
+    .p-voce-sabe {
+        width: 45.2vw;
+        height: 54.2vh;
+        font-size: 25px; //tamanho era 25 mas ficou muito grande no Chrome
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+    }
+    .imagem-voce-sabe img {
+        width: 23.7vw;
+        height: 51vh;
+        border-radius: 4px;
+    }
 }
-
-.p-voce-sabe {
-    width: 45.2vw;
-    height: 54.2vh;
-    font-size: 25px; //tamanho era 25 mas ficou muito grande no Chrome
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-}
-
-.imagem-voce-sabe img {
-    width: 23.7vw;
-    height: 51vh;
-    border-radius: 4px;
-}
-
 //--------------------------------
 
 .multirao {
@@ -77,24 +75,21 @@ header {
     background-color:#FF69B4;
     padding: 15px;
     height: 37.6vh;
+    .imagem-multirao img {
+        width: 25.4vw;
+        height: 32.6vh;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+    }
+    .p-multirao {
+        width: 42.1vw;
+        height: 25vh;
+        color: #E4EEF1;
+        font-size: 25px; 
+        //fonte ficou muito grande no Chrome
+    } 
 }
-
-.imagem-multirao img {
-    width: 25.4vw;
-    height: 32.6vh;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-}
-
-.p-multirao {
-    width: 42.1vw;
-    height: 25vh;
-    color: #E4EEF1;
-    font-size: 25px; 
-    //fonte ficou muito grande no Chrome
-}
-
 //---------------------------------------
 
 .informacoes {
@@ -104,13 +99,11 @@ header {
     align-items: center;
     justify-items: center;
     background-color: #FFD9EC;
+    .informacoes-item {
+        width: 16.2vw;
+        height: 35.9vh;
+    }
 }
-
-.informacoes-item {
-    width: 16.2vw;
-    height: 35.9vh;
-}
-
 //--------------------------------
 
 .rodape {
@@ -119,28 +112,28 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.icones {
-    display: flex;
-    gap: 15px;
-    .icones-sociais {
-        width: 3.6vw;
-        height: 7.5vh;
+    
+    .icones {
+        display: flex;
+        gap: 15px;
+        .icones-sociais {
+            width: 3.6vw;
+            height: 7.5vh;
+        }
     }
-}
 
-.informacoes-autor {
-    text-align: center;
-    color: #E4EEF1;
-    font-size: 12px;
-}
+    .informacoes-autor {
+        text-align: center;
+        color: #E4EEF1;
+        font-size: 12px;
+    }
 
-.icone-outubro-rosa {
-    display: flex;
-    align-items: center;
-    img {
-        width: 6.8vw;
-        height: 15.6vh;
+    .icone-outubro-rosa {
+        display: flex;
+        align-items: center;
+        img {
+            width: 6.8vw;
+            height: 15.6vh;
+        }
     }
 }
