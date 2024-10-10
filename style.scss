@@ -56,7 +56,7 @@ header {
 .p-voce-sabe {
     width: 45.2vw;
     height: 54.2vh;
-    font-size: 18px; //tamanho era 25 mas ficou muito grande no Chrome
+    font-size: 25px; //tamanho era 25 mas ficou muito grande no Chrome
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -91,7 +91,8 @@ header {
     width: 42.1vw;
     height: 25vh;
     color: #E4EEF1;
-    //font-size: 25px; //fonte ficou muito grande no Chrome
+    font-size: 25px; 
+    //fonte ficou muito grande no Chrome
 }
 
 //---------------------------------------
