@@ -55,7 +55,7 @@ main {
     .p-voce-sabe {
         width: 45.2vw;
         height: 54.2vh;
-        font-size: 25px; //tamanho era 25 mas ficou muito grande no Chrome
+        font-size: 22px; //tamanho era 25 mas ficou muito grande no Chrome
         font-weight: 400;
         display: flex;
         align-items: center;
@@ -86,7 +86,7 @@ main {
         width: 42.1vw;
         height: 25vh;
         color: #E4EEF1;
-        font-size: 25px; 
+        font-size: 18px; 
         //fonte ficou muito grande no Chrome
     } 
 }
@@ -100,8 +100,8 @@ main {
     justify-items: center;
     background-color: #FFD9EC;
     .informacoes-item {
-        width: 16.2vw;
-        height: 35.9vh;
+        width: 16vw;
+        height: 35vh;
     }
 }
 //--------------------------------

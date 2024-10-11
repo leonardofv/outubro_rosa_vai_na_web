@@ -52,7 +52,7 @@ main {
 .container-voce-sabe .p-voce-sabe {
   width: 45.2vw;
   height: 54.2vh;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -82,7 +82,7 @@ main {
   width: 42.1vw;
   height: 25vh;
   color: #E4EEF1;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .informacoes {
@@ -94,8 +94,8 @@ main {
   background-color: #FFD9EC;
 }
 .informacoes .informacoes-item {
-  width: 16.2vw;
-  height: 35.9vh;
+  width: 16vw;
+  height: 35vh;
 }
 
 .rodape {
