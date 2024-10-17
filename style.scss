@@ -5,135 +5,293 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Noto Sans", sans-serif;
-}
-
-//-----------------------------
-.ContainerHeader {
-    display: flex;
-    align-items: center;
-    .imagemHeader {
-        width: 6.5vw;
-        height: 14.3vh;
-    }
-    h2 {
-        font-size: 20px;
-        color: #E4EEF1;
-    }
+    list-style: none;
+    text-decoration: none;
 }
 
 header {
+    background-color: #ff69b4;
+    height: 14.9vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #FF69B4;
-    height: 16.9vh;
-    a {
-        text-decoration: none;
-        margin: 20px;
-        color: #E4EEF1;
-    }
-    a:hover {
-        border-bottom: 1px solid white;
-    }
-}
-
-//--------------------------------
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #FFD9EC;
-}
-
-.container-voce-sabe {
-    display: flex;
-    background: #FFD9EC;
-    width: 100%;
-    justify-content: space-evenly;
-    padding: 20px 0;
-    .p-voce-sabe {
-        width: 45.2vw;
-        height: 54.2vh;
-        font-size: 22px; //tamanho era 25 mas ficou muito grande no Chrome
-        font-weight: 400;
+    .containerHeader {
         display: flex;
         align-items: center;
+        width: 30vw;
+        h2 {
+            font-size: 1.5vw;
+            color: #E4EEF1;
+
+        }
     }
-    .imagem-voce-sabe img {
-        width: 23.7vw;
-        height: 51vh;
-        border-radius: 4px;
+
+    .containerNav {
+        width: 30vw;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a {
+                font-size: 1.4vw;
+                font-weight: 500;
+                color: #E4EEF1;
+
+            }
+            a:hover {
+                border-bottom: 2px solid #ffd9ec;
+            }
+        }
     }
 }
-//--------------------------------
+//-------------------------------------------------------------------------------
 
-.multirao {
+.section01 {
+    background-color: #ffd9ec;
+    height: 54.2vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color:#FF69B4;
-    padding: 15px;
+    .paragrafo {
+        width: 38.2vw;
+        height: 38.1vh;
+        display: flex;
+        align-items: center;
+        p {
+            font-size: 1.6vw;
+        }
+    }
+    img {
+        width: 24vw;
+        height: 47vh;
+    }
+}
+
+.section02 {
+    background-color: #ff69b4;
     height: 37.6vh;
-    .imagem-multirao img {
-        width: 25.4vw;
-        height: 32.6vh;
-        border-radius: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .paragrafo02 {
+        width: 42.1vw;
         display: flex;
         align-items: center;
-    }
-    .p-multirao {
-        width: 42.1vw;
-        height: 25vh;
-        color: #E4EEF1;
-        font-size: 18px; 
-        //fonte ficou muito grande no Chrome
-    } 
-}
-//---------------------------------------
+        p {
+            font-size: 1.6vw;
+            color: #E4EEF1;
 
-.informacoes {
+        }
+    }
+    img {
+        width: 27.4vw;
+        height: 33.6vh;
+    }
+}
+
+.info {
+    background-color: #ffd9ec;
     height: 61.2vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-items: center;
-    background-color: #FFD9EC;
-    .informacoes-item {
-        width: 16vw;
-        height: 35vh;
-    }
 }
-//--------------------------------
 
 .rodape {
-    height: 20.5vh;
-    background-color: #FF69B4;
+    background-color: #ff69b4;
+    height: 20ouvh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    
-    .icones {
+    justify-content: space-around;
+    .icones-sociais {
+        width: 16vw;
         display: flex;
-        gap: 15px;
-        .icones-sociais {
-            width: 3vw;
-            height: 6.2vh;
-        }
-    }
-
-    .informacoes-autor {
-        text-align: center;
-        color: #E4EEF1;
-        font-size: 12px;
-    }
-
-    .icone-outubro-rosa {
-        display: flex;
+        justify-content: space-between;
         align-items: center;
         img {
-            width: 6.8vw;
-            height: 15.6vh;
+            width: 3.5vw;
+        }
+    }
+    .paragrafos {
+        p {
+            color: #E4EEF1;
+            font-size: 1.2vw;
+            text-align: center;
+        }
+    }
+}
+
+//------------------------------------------------------------------------------
+
+//@medias
+
+//imagem da head e parágrafo da section1
+@media (max-width: 900px) {
+    .containerHeader {
+        img {
+            width: 12vw;
+        }
+    }
+    .section01 {
+        .paragrafo {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+//retirar imagem da section01
+@media (max-width: 1200px) {
+    .section01 {
+        height: 40vh;
+        .paragrafo {
+            width: 80vw;
+            display: flex;
+            align-items: center;
+        }
+        img {
+            display: none;
+        }
+    }
+    .section02 {
+        height: 20vh;
+        img {
+            display: none;
+        }
+    }
+}
+
+//ajustando section01
+@media (min-width: 801px) and (max-width: 1200px) {
+    .section01 {
+        height: 20vh;
+        .paragrafo {
+            height: 10vh;
+        }
+    }
+    .section02 {
+        height: 20vh;
+        .paragrafo02 {
+            width: 80vw;
+            height: 15vh;
+        }
+    }
+}
+
+//paragráfo da section1
+@media (min-width: 501px) and (max-width: 800px) {
+    .section01 {
+        height: 20vh;
+        .paragrafo {
+            width: 70vw;
+            height: 20vh;
+            p {
+                font-size: 2vw;
+            }
+        }
+    }
+    .section02 {
+        height: 20vh;
+        .paragrafo02 {
+            width: 70vw;
+            height: 20vh;
+            p {
+                font-size: 2vw;
+            }
+        }
+    }
+}
+
+//smartphones
+@media (max-width: 500px) {
+    header {
+        flex-direction: column;
+        height: 17vh;
+        .containerNav {
+            width: 50vw;
+            ul {
+                a {
+                    font-size: 2.4vw;
+                }
+            }
+        }
+        img {
+            width: 12vw;
+        }
+    }
+    .section01 {
+        height: 15vh;
+        .paragrafo {
+            width: 90vw;
+            height: 20vh;
+            p {
+                font-size: 2.5vw;
+            }
+        }
+    }
+    .section02 {
+        height: 15vh;
+        .paragrafo02 {
+            width: 90vw;
+            p {
+                font-size: 2.5vw;
+            }
+        }
+    }
+}
+
+//-------------------------------------
+//Grid
+
+@media (min-width: 650px) and (max-width: 1000px) {
+    .info {
+        grid-template-columns: repeat(2, 1fr);
+        height: 90vh;
+    }
+    .rodape {
+        height: 15vh;
+        .icones-sociais {
+            img {
+                width: 3.5vw;
+            }
+        }
+        .paragrafos {
+            p {
+                font-size: 2vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 649px) {
+    .info {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100vh;
+        padding: 5vh 0;
+        img {
+            width: 40vw;
+        }
+    }
+    .info {
+        height: 90vh;
+    }
+    .rodape {
+        height: 13vh;
+        .icones-sociais {
+            img {
+                width: 4.5vw;
+            }
+        }
+        .paragrafos {
+            p {
+                font-size: 2vw;
+            }
+        }
+        .img-outubro-rosa {
+            img {
+                width: 12vw;
+            }
         }
     }
 }
