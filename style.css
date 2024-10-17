@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+body {
+  background-color: #ffd9ec;
+}
+
 header {
   background-color: #ff69b4;
   height: 14.9vh;
@@ -94,7 +98,7 @@ header .containerNav ul a:hover {
 
 .rodape {
   background-color: #ff69b4;
-  height: 20ouvh;
+  height: 25vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -182,7 +186,7 @@ header .containerNav ul a:hover {
 @media (max-width: 500px) {
   header {
     flex-direction: column;
-    height: 17vh;
+    height: 16vh;
   }
   header .containerNav {
     width: 50vw;
@@ -191,7 +195,7 @@ header .containerNav ul a:hover {
     font-size: 2.4vw;
   }
   header img {
-    width: 12vw;
+    width: 15vw;
   }
   .section01 {
     height: 15vh;
@@ -232,7 +236,7 @@ header .containerNav ul a:hover {
   .info {
     grid-template-columns: repeat(1, 1fr);
     height: 100vh;
-    padding: 5vh 0;
+    margin: 3vh 0;
   }
   .info img {
     width: 40vw;

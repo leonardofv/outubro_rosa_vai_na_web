@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+body {
+    background-color: #ffd9ec;
+}
+
 header {
     background-color: #ff69b4;
     height: 14.9vh;
@@ -25,7 +29,6 @@ header {
 
         }
     }
-
     .containerNav {
         width: 30vw;
         ul {
@@ -36,7 +39,6 @@ header {
                 font-size: 1.4vw;
                 font-weight: 500;
                 color: #E4EEF1;
-
             }
             a:hover {
                 border-bottom: 2px solid #ffd9ec;
@@ -44,6 +46,7 @@ header {
         }
     }
 }
+
 //-------------------------------------------------------------------------------
 
 .section01 {
@@ -80,7 +83,6 @@ header {
         p {
             font-size: 1.6vw;
             color: #E4EEF1;
-
         }
     }
     img {
@@ -100,7 +102,7 @@ header {
 
 .rodape {
     background-color: #ff69b4;
-    height: 20ouvh;
+    height: 25vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -207,7 +209,7 @@ header {
 @media (max-width: 500px) {
     header {
         flex-direction: column;
-        height: 17vh;
+        height: 16vh;
         .containerNav {
             width: 50vw;
             ul {
@@ -217,7 +219,7 @@ header {
             }
         }
         img {
-            width: 12vw;
+            width: 15vw;
         }
     }
     .section01 {
@@ -268,7 +270,7 @@ header {
     .info {
         grid-template-columns: repeat(1, 1fr);
         height: 100vh;
-        padding: 5vh 0;
+        margin: 3vh 0;
         img {
             width: 40vw;
         }
